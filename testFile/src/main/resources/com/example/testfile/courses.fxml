@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<StackPane styleClass="welcome-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.CoursesController">
+    <AnchorPane maxWidth="950" maxHeight="650" prefWidth="920" prefHeight="620" styleClass="landing-panel">
+        <!-- Navigation -->
+        <HBox alignment="CENTER_RIGHT" spacing="24" AnchorPane.topAnchor="20" AnchorPane.rightAnchor="36">
+            <Button text="Home" styleClass="top-nav-btn" onAction="#openHome"/>
+            <Label text="Courses" styleClass="top-nav-item top-nav-active"/>
+            <Button text="About" styleClass="top-nav-btn" onAction="#openAbout"/>
+            <Button text="Login" styleClass="top-nav-btn" onAction="#openLogin"/>
+        </HBox>
+        
+        <!-- Page Title -->
+        <VBox alignment="CENTER" spacing="4" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="40">
+            <Label text="📚 Explore Our Courses" styleClass="courses-page-title"/>
+            <Label text="Select a class to view chapter-wise content and materials" styleClass="courses-page-subtitle"/>
+        </VBox>
+        
+        <!-- Course Cards Container - Scrollable -->
+        <ScrollPane fx:id="mainScrollPane" AnchorPane.topAnchor="130" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" 
+                    AnchorPane.bottomAnchor="30" fitToWidth="true" hbarPolicy="NEVER" 
+                    styleClass="course-scroll-pane">
+            <VBox fx:id="mainContentBox" spacing="25" alignment="TOP_CENTER">
+                <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+                
+                <!-- Chapter Content Panel (appears at TOP when a course is selected) -->
+                <VBox fx:id="chapterContentPane" styleClass="chapter-content-pane" spacing="15">
+                    <HBox alignment="CENTER_LEFT" spacing="10">
+                        <Label fx:id="selectedCourseTitle" text="Select a Course" styleClass="chapter-pane-title" HBox.hgrow="ALWAYS"/>
+                        <Button text="✕" styleClass="chapter-close-btn" onAction="#closeChapterPane"/>
+                    </HBox>
+                    <ScrollPane fx:id="chapterScrollPane" styleClass="chapter-scroll-pane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="250">
+                        <FlowPane fx:id="chapterSlotsPane" styleClass="chapter-slots-container" hgap="15" vgap="15" prefWrapLength="800"/>
+                    </ScrollPane>
+                </VBox>
+                
+                <!-- First Row of Course Cards -->
+                <HBox fx:id="courseCardsContainer" alignment="CENTER" spacing="30">
+                    
+                    <!-- Class 9-10 Card -->
+                    <VBox fx:id="class910Card" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectClass910">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="9-10" styleClass="course-card-number"/>
+                        <Label text="Class 9-10" styleClass="course-card-title"/>
+                        <Label text="SSC Foundation" styleClass="course-card-subtitle"/>
+                        <Label text="9 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                    
+                    <!-- Class 11-12 Card -->
+                    <VBox fx:id="class1112Card" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectClass1112">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="11-12" styleClass="course-card-number"/>
+                        <Label text="Class 11-12" styleClass="course-card-title"/>
+                        <Label text="HSC Advanced" styleClass="course-card-subtitle"/>
+                        <Label text="9 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                    
+                    <!-- Admission Card -->
+                    <VBox fx:id="admissionCard" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectAdmission">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="ADM" styleClass="course-card-number"/>
+                        <Label text="Admission" styleClass="course-card-title"/>
+                        <Label text="University Prep" styleClass="course-card-subtitle"/>
+                        <Label text="7 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                </HBox>
+                
+                <!-- Second Row of Course Cards -->
+                <HBox fx:id="courseCardsRow2" alignment="CENTER" spacing="30">
+                    
+                    <!-- BSC Courses Card -->
+                    <VBox fx:id="bscCard" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectBSC">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="BSC" styleClass="course-card-number"/>
+                        <Label text="BSC Courses" styleClass="course-card-title"/>
+                        <Label text="Bachelor of Science" styleClass="course-card-subtitle"/>
+                        <Label text="6 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                    
+                    <!-- Master's Courses Card -->
+                    <VBox fx:id="mastersCard" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectMasters">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="MSC" styleClass="course-card-number"/>
+                        <Label text="Master's Courses" styleClass="course-card-title"/>
+                        <Label text="Post Graduate" styleClass="course-card-subtitle"/>
+                        <Label text="10 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                    
+                    <!-- BCS Courses Card -->
+                    <VBox fx:id="bcsCard" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectBCS">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="BCS" styleClass="course-card-number"/>
+                        <Label text="BCS Courses" styleClass="course-card-title"/>
+                        <Label text="Civil Service Prep" styleClass="course-card-subtitle"/>
+                        <Label text="9 Topics" styleClass="course-card-count"/>
+                    </VBox>
+                </HBox>
+                
+                <!-- Third Row of Course Cards -->
+                <HBox fx:id="courseCardsRow3" alignment="CENTER" spacing="30">
+                    
+                    <!-- BBA Courses Card -->
+                    <VBox fx:id="bbaCard" styleClass="course-card" alignment="CENTER" spacing="8" onMouseClicked="#selectBBA">
+                        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+                        <Label text="BBA" styleClass="course-card-number"/>
+                        <Label text="BBA Courses" styleClass="course-card-title"/>
+                        <Label text="Business Admin" styleClass="course-card-subtitle"/>
+                        <Label text="8 Subjects" styleClass="course-card-count"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </ScrollPane>
+    </AnchorPane>
+</StackPane>

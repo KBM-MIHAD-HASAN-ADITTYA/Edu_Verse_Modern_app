@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane styleClass="auth-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.UserHomeController" alignment="CENTER">
+    <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="premium-scroll">
+        <StackPane alignment="CENTER" style="-fx-padding: 30 0;">
+            <VBox alignment="CENTER" prefWidth="580" maxWidth="620" styleClass="auth-card user-home-card" spacing="18">
+                <padding>
+                    <Insets top="26" right="40" bottom="30" left="40"/>
+                </padding>
+
+                <!-- Top Navigation Bar -->
+                <HBox alignment="CENTER" spacing="0">
+                    <Button text="←" styleClass="premium-back-btn" onAction="#goBack"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <HBox alignment="CENTER_RIGHT" spacing="14">
+                        <!-- Chat Icon Button -->
+                        <StackPane>
+                            <Button fx:id="chatBtn" text="💬" styleClass="premium-icon-btn" onAction="#openChat"/>
+                            <Label fx:id="unreadBadge" text="0" styleClass="chat-badge" visible="false" managed="false"
+                                   StackPane.alignment="TOP_RIGHT" translateX="8" translateY="-4"/>
+                        </StackPane>
+                        <Button text="Home" styleClass="premium-nav-btn" onAction="#openHome"/>
+                        <Button text="Courses" styleClass="premium-nav-btn" onAction="#openCourses"/>
+                        <Button text="About" styleClass="premium-nav-btn" onAction="#openAbout"/>
+                        <Button text="Logout" styleClass="premium-logout-btn" onAction="#openLogin"/>
+                    </HBox>
+                </HBox>
+
+                <!-- Brand Header - Centered -->
+                <VBox alignment="CENTER" spacing="8">
+                    <HBox alignment="CENTER" spacing="12">
+                        <Label text="🎓" style="-fx-font-size: 40px;"/>
+                        <Label text="Edu-Verse" styleClass="premium-brand"/>
+                    </HBox>
+                    <Label text="Your Gateway to Knowledge" styleClass="premium-tagline"/>
+                </VBox>
+
+                <!-- User Profile - Centered -->
+                <VBox alignment="CENTER" spacing="12" style="-fx-padding: 10 0;">
+                    <StackPane styleClass="premium-avatar-bg" style="-fx-pref-width: 80; -fx-pref-height: 80;">
+                        <Circle radius="40" styleClass="premium-avatar-circle"/>
+                        <Label text="👤" style="-fx-font-size: 32px;"/>
+                    </StackPane>
+                    <VBox alignment="CENTER" spacing="4">
+                        <Label fx:id="idLabel" styleClass="premium-id-label"/>
+                        <Label text="Manage your learning materials" styleClass="premium-subtitle"/>
+                    </VBox>
+                </VBox>
+
+                <Separator styleClass="premium-separator"/>
+
+                <!-- ============ TEACHER PANEL ============ -->
+                <VBox fx:id="teacherPane" spacing="20" styleClass="user-home-panel" visible="false" managed="false" alignment="CENTER">
+                    
+                    <!-- Quick Action Buttons Row - Centered -->
+                    <VBox spacing="16" alignment="CENTER">
+                        <Label text="✨ Quick Actions" styleClass="premium-section-header"/>
+                        <HBox spacing="18" alignment="CENTER">
+                            <Button fx:id="noticeIconBtn" text="📢 Notices" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#openTeacherNoticeManager"/>
+                            <Button text="📁 Browse PDFs" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#showAllTeacherUploads"/>
+                            <Button text="💬 Messages" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#openChat"/>
+                        </HBox>
+                    </VBox>
+
+                    <Separator styleClass="premium-separator"/>
+                    
+                    <!-- Course Management Section - Centered -->
+                    <VBox spacing="14" styleClass="premium-section-card" alignment="CENTER">
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="📚" style="-fx-font-size: 20px;"/>
+                            <Label text="Course Materials" styleClass="premium-section-title"/>
+                        </HBox>
+
+                        <HBox spacing="18" alignment="CENTER">
+                            <VBox spacing="6" alignment="CENTER">
+                                <Label text="Course" styleClass="premium-field-label"/>
+                                <ComboBox fx:id="courseSelector" promptText="Select Course..." styleClass="premium-combo" prefWidth="210"/>
+                            </VBox>
+                            <VBox spacing="6" alignment="CENTER">
+                                <Label text="Subject" styleClass="premium-field-label"/>
+                                <ComboBox fx:id="chapterSelector" promptText="Select Subject..." styleClass="premium-combo" prefWidth="210"/>
+                            </VBox>
+                        </HBox>
+
+                        <HBox spacing="16" alignment="CENTER" style="-fx-padding: 8 0 0 0;">
+                            <Button text="📋 View" prefWidth="125" prefHeight="40" styleClass="premium-secondary-btn" onAction="#viewCourseChapters"/>
+                            <Button text="📎 PDF" prefWidth="125" prefHeight="40" styleClass="premium-secondary-btn" onAction="#choosePdfForChapter"/>
+                            <Button text="📤 Upload" prefWidth="125" prefHeight="40" styleClass="premium-primary-btn" onAction="#uploadToChapter"/>
+                        </HBox>
+                        <Label fx:id="chapterPdfLabel" text="No file selected" styleClass="premium-hint-label"/>
+                    </VBox>
+
+                    <Separator styleClass="premium-separator"/>
+
+                    <!-- Quick Upload Section - Centered -->
+                    <VBox spacing="14" styleClass="premium-section-card" alignment="CENTER">
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="📤" style="-fx-font-size: 20px;"/>
+                            <Label text="Quick Upload" styleClass="premium-section-title"/>
+                        </HBox>
+                        <Label text="Upload to any course section" styleClass="premium-badge"/>
+
+                        <HBox spacing="18" alignment="CENTER">
+                            <VBox spacing="6" alignment="CENTER">
+                                <Label text="Section" styleClass="premium-field-label"/>
+                                <ComboBox fx:id="quickUploadClassSelector" promptText="Select Section..." styleClass="premium-combo" prefWidth="210"/>
+                            </VBox>
+                            <VBox spacing="6" alignment="CENTER">
+                                <Label text="Title" styleClass="premium-field-label"/>
+                                <TextField fx:id="materialNameField" promptText="Enter PDF name" styleClass="premium-input" prefWidth="210"/>
+                            </VBox>
+                        </HBox>
+
+                        <HBox spacing="16" alignment="CENTER" style="-fx-padding: 8 0 0 0;">
+                            <Button text="📎 Choose File" prefWidth="165" prefHeight="40" styleClass="premium-secondary-btn" onAction="#choosePdf"/>
+                            <Button text="⬆ Upload" prefWidth="165" prefHeight="40" styleClass="premium-primary-btn" onAction="#uploadPdf"/>
+                        </HBox>
+                        <Label fx:id="selectedPdfLabel" text="No file selected" styleClass="premium-hint-label"/>
+                    </VBox>
+
+                    <Separator styleClass="premium-separator"/>
+
+                    <!-- Browse PDFs Section - Centered -->
+                    <VBox spacing="14" styleClass="premium-section-card" alignment="CENTER">
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="📁" style="-fx-font-size: 20px;"/>
+                            <Label text="Browse PDFs by Class" styleClass="premium-section-title"/>
+                        </HBox>
+
+                        <HBox spacing="16" alignment="CENTER">
+                            <ComboBox fx:id="teacherClassSelector" promptText="Select class..." styleClass="premium-combo" prefWidth="230"/>
+                            <Button text="📋 Show" prefWidth="125" prefHeight="40" styleClass="premium-secondary-btn" onAction="#showTeacherClassMaterials"/>
+                        </HBox>
+                    </VBox>
+                </VBox>
+
+                <!-- ============ STUDENT PANEL ============ -->
+                <VBox fx:id="studentPane" spacing="20" styleClass="user-home-panel" visible="false" managed="false" alignment="CENTER">
+                    
+                    <!-- Quick Action Buttons Row - Centered -->
+                    <VBox spacing="16" alignment="CENTER">
+                        <Label text="✨ Quick Actions" styleClass="premium-section-header"/>
+                        <HBox spacing="18" alignment="CENTER">
+                            <Button text="📢 Notices" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#openStudentNoticeBoard"/>
+                            <Button text="📁 Browse PDFs" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#showAllTeacherUploads"/>
+                            <Button text="💬 Messages" prefWidth="150" prefHeight="48" 
+                                    styleClass="premium-action-btn" onAction="#openChat"/>
+                        </HBox>
+                    </VBox>
+
+                    <Separator styleClass="premium-separator"/>
+                    
+                    <!-- Browse Materials Section - Centered -->
+                    <VBox spacing="16" styleClass="premium-section-card" alignment="CENTER">
+                        <HBox alignment="CENTER" spacing="12">
+                            <Label text="🔍" style="-fx-font-size: 24px;"/>
+                            <Label text="Browse Class Materials" styleClass="premium-section-title"/>
+                        </HBox>
+
+                        <VBox spacing="10" alignment="CENTER">
+                            <Label text="Select Your Class" styleClass="premium-field-label" style="-fx-font-size: 14px;"/>
+                            <HBox spacing="10" alignment="CENTER">
+                                <HBox alignment="CENTER" styleClass="premium-input-wrap" spacing="12" prefWidth="320">
+                                    <Label text="🎓" style="-fx-font-size: 20px; -fx-text-fill: #1e63dc;"/>
+                                    <ComboBox fx:id="classSelector" promptText="Choose a class..." styleClass="premium-combo" prefWidth="260"/>
+                                </HBox>
+                            </HBox>
+                        </VBox>
+
+                        <Button text="📚 Load Class PDFs" prefWidth="230" prefHeight="46" styleClass="premium-action-btn" onAction="#showClassMaterials"/>
+                    </VBox>
+
+                    <Separator styleClass="premium-separator"/>
+
+                    <!-- Notice Board Preview for Students - Centered -->
+                    <VBox fx:id="studentNoticePreview" spacing="14" alignment="CENTER" styleClass="premium-notice-card">
+                        <HBox alignment="CENTER" spacing="10">
+                            <Label text="📢" style="-fx-font-size: 22px;"/>
+                            <Label text="Latest Notices" styleClass="premium-section-title"/>
+                        </HBox>
+                        <VBox fx:id="noticePreviewList" spacing="10" alignment="CENTER">
+                            <Label text="Loading notices..." styleClass="premium-hint-label"/>
+                        </VBox>
+                        <Button text="View All Notices" prefWidth="190" prefHeight="40" styleClass="premium-secondary-btn" onAction="#openStudentNoticeBoard"/>
+                    </VBox>
+
+                    <!-- Quick Tips for Students - Centered -->
+                    <HBox alignment="CENTER" spacing="12" styleClass="premium-tips-card">
+                        <Label text="💡" style="-fx-font-size: 20px;"/>
+                        <Label text="Select a class, then click 'Load Class PDFs' to view materials" styleClass="premium-tip-text"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </StackPane>
+    </ScrollPane>
+</StackPane>

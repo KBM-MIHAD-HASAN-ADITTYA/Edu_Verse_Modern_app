@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "DualWindowLauncher",
+      "request": "launch",
+      "mainClass": "com.example.testfile/com.example.testfile.DualWindowLauncher",
+      "projectName": "testFile"
+    },
+    {
+      "type": "java",
+      "name": "HelloApplication",
+      "request": "launch",
+      "mainClass": "com.example.testfile/com.example.testfile.HelloApplication",
+      "projectName": "testFile"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

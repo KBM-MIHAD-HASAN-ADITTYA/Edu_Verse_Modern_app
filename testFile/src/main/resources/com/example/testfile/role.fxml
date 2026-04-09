@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.effect.DropShadow?>
+
+<StackPane styleClass="auth-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.roleController">
+    <VBox alignment="TOP_CENTER" prefWidth="480" maxWidth="500" styleClass="auth-card role-card" spacing="16">
+        <padding>
+            <Insets top="28" right="36" bottom="32" left="36"/>
+        </padding>
+
+        <!-- Top Navigation -->
+        <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308">
+            <Button text="🏠 Home" styleClass="role-home-btn" translateX="6" onAction="#openHome"/>
+        </HBox>
+
+        <!-- Premium Brand Header -->
+        <VBox alignment="CENTER" spacing="6">
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="🎓" style="-fx-font-size: 42px;"/>
+                <Label text="Edu-Verse" styleClass="role-brand" style="-fx-font-size: 44px;"/>
+            </HBox>
+            <Label text="✨ Your Gateway to Knowledge ✨" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 13px; -fx-text-fill: #7a8bb5;"/>
+        </VBox>
+
+        <!-- Title Section -->
+        <VBox alignment="CENTER" spacing="4" style="-fx-padding: 8 0 0 0;">
+            <Label text="Select Your Role" styleClass="role-title" style="-fx-font-size: 32px;"/>
+            <Label text="Choose how you want to continue" styleClass="role-subtitle" style="-fx-font-size: 14px;"/>
+        </VBox>
+
+        <!-- Role Cards with Premium Avatars -->
+        <HBox alignment="CENTER" spacing="20" style="-fx-padding: 10 0 0 0;">
+            <!-- Teacher Card -->
+            <VBox fx:id="teacherCard" alignment="CENTER" spacing="12" styleClass="role-option-card" 
+                  style="-fx-min-width: 185; -fx-pref-width: 185; -fx-min-height: 210; -fx-pref-height: 210;" 
+                  onMouseClicked="#chooseTeacher">
+                
+                <!-- Teacher Avatar Container -->
+                <StackPane styleClass="role-avatar-bg" style="-fx-pref-width: 100; -fx-pref-height: 100;">
+                    <!-- Outer glow circle -->
+                    <Circle radius="48" style="-fx-fill: linear-gradient(to bottom, #e8f4fe, #d4e9fc);"/>
+                    <!-- Inner avatar circle -->
+                    <Circle radius="42" style="-fx-fill: linear-gradient(to bottom, #fff8e6, #ffe4b5);"/>
+                    <!-- Teacher emoji avatar -->
+                    <VBox alignment="CENTER" spacing="0">
+                        <Label text="👨‍🏫" style="-fx-font-size: 44px;"/>
+                    </VBox>
+                </StackPane>
+                
+                <!-- Teacher Label with Check -->
+                <HBox alignment="CENTER" spacing="8">
+                    <Label text="Teacher" styleClass="role-option-title" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+                    <StackPane fx:id="teacherCheck" styleClass="role-check role-check-hidden" alignment="CENTER" 
+                               style="-fx-min-width: 22; -fx-pref-width: 22; -fx-min-height: 22; -fx-pref-height: 22;">
+                        <Label text="✓" styleClass="role-check-mark" style="-fx-font-size: 13px;"/>
+                    </StackPane>
+                </HBox>
+                
+                <!-- Teacher Description -->
+                <Label text="Upload &amp; Manage Materials" 
+                       style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #8a9ab8;"/>
+            </VBox>
+
+            <!-- Student Card -->
+            <VBox fx:id="studentCard" alignment="CENTER" spacing="12" styleClass="role-option-card" 
+                  style="-fx-min-width: 185; -fx-pref-width: 185; -fx-min-height: 210; -fx-pref-height: 210;" 
+                  onMouseClicked="#chooseStudent">
+                
+                <!-- Student Avatar Container -->
+                <StackPane styleClass="role-avatar-bg" style="-fx-pref-width: 100; -fx-pref-height: 100;">
+                    <!-- Outer glow circle -->
+                    <Circle radius="48" style="-fx-fill: linear-gradient(to bottom, #e8f4fe, #d4e9fc);"/>
+                    <!-- Inner avatar circle -->
+                    <Circle radius="42" style="-fx-fill: linear-gradient(to bottom, #e6f7ff, #b5e8ff);"/>
+                    <!-- Student emoji avatar -->
+                    <VBox alignment="CENTER" spacing="0">
+                        <Label text="👨‍🎓" style="-fx-font-size: 44px;"/>
+                    </VBox>
+                </StackPane>
+                
+                <!-- Student Label with Check -->
+                <HBox alignment="CENTER" spacing="8">
+                    <Label text="Student" styleClass="role-option-title" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+                    <StackPane fx:id="studentCheck" styleClass="role-check role-check-hidden" alignment="CENTER" 
+                               style="-fx-min-width: 22; -fx-pref-width: 22; -fx-min-height: 22; -fx-pref-height: 22;">
+                        <Label text="✓" styleClass="role-check-mark" style="-fx-font-size: 13px;"/>
+                    </StackPane>
+                </HBox>
+                
+                <!-- Student Description -->
+                <Label text="Access Learning Resources" 
+                       style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #8a9ab8;"/>
+            </VBox>
+        </HBox>
+
+        <!-- Premium Continue Button -->
+        <VBox alignment="CENTER" spacing="8" style="-fx-padding: 12 0 0 0;">
+            <Button text="Continue →" styleClass="role-continue-btn-premium" 
+                    style="-fx-min-height: 50; -fx-pref-height: 50; -fx-font-size: 16px; -fx-background-color: linear-gradient(to right, #2563eb, #1d4ed8); -fx-text-fill: white;" 
+                    maxWidth="1.7976931348623157E308" onAction="#continueWithRole"/>
+            <Label text="🔒 Secure &amp; Private" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #a0aec0;"/>
+        </VBox>
+    </VBox>
+</StackPane>

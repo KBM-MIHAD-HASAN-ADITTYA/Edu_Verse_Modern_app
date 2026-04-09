@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="auth-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.loginController">
+    <VBox alignment="TOP_CENTER" prefWidth="420" maxWidth="420" styleClass="auth-card" spacing="14">
+        <padding>
+            <Insets top="36" right="36" bottom="28" left="36"/>
+        </padding>
+
+        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+            <Button text="←" styleClass="auth-back-btn" onAction="#goBack"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="8">
+            <Label text="🎓" style="-fx-font-size: 34px;"/>
+            <Label text="Edu-Verse" styleClass="auth-brand" style="-fx-font-size: 38px;"/>
+        </HBox>
+
+        <VBox spacing="6">
+            <Label text="Email Address or User Name" styleClass="auth-field-label"/>
+            <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+                <Label text="✉" styleClass="auth-input-icon" style="-fx-font-size: 16px;"/>
+                <TextField fx:id="username" promptText="Enter your email or username" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="6">
+            <Label text="Password" styleClass="auth-field-label"/>
+            <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+                <Label text="🔒" styleClass="auth-input-icon" style="-fx-font-size: 14px;"/>
+                <PasswordField fx:id="password" promptText="Enter your password" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+            </HBox>
+        </VBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <CheckBox text="Remember me" styleClass="auth-check"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Hyperlink text="Forgot password?" styleClass="auth-link"/>
+        </HBox>
+
+        <Button text="Login" styleClass="auth-primary-btn" maxWidth="1.7976931348623157E308" onAction="#login"/>
+
+        <HBox alignment="CENTER" spacing="6">
+            <Label text="Don't have an account?" styleClass="auth-footer-text"/>
+            <Hyperlink text="Sign Up" styleClass="auth-footer-link" onAction="#openSignUp"/>
+        </HBox>
+    </VBox>
+</StackPane>

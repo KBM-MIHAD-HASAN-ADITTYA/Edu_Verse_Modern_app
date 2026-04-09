@@ -1,0 +1,18 @@
+cls9-10	Protik Roy	G.MathBook	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\G.MathBook_Protik_Roy.pdf
+cls9-10	Protik Roy	PhyBook	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\PhyBook_Protik_Roy.pdf
+cls9-10	Mihad	Phy(EV)	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\Phy_EV__Mihad.pdf
+cls9-10	Protik Roy	H.Math(BV)	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\H.Math_BV__Protik_Roy.pdf
+cls9-10	Mihad	chemistryMB	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\chemistryMB_Mihad.pdf
+cls9-10 - Math	Protik Roy	GM ( BV )	C:\Users\ASUS\OneDrive - BUET\Attachments\1-2\CSE 108 ( OOP sessional )\Project JavaFx\Code\uploaded_materials\GM___BV___Protik_Roy.pdf
+cls9-10 - Bangla	Protik Roy	বাংলা সহপাঠ	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\____________Protik_Roy.pdf
+cls9-10 - Bangla	Protik Roy	বাংলা সাহিত্য	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\______________Protik_Roy.pdf
+cls9-10 - English	Protik Roy	English  for today	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\English__for_today_Protik_Roy.pdf
+cls9-10 - English	Protik Roy	English grammar and composition	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\English_grammar_and_composition_Protik_Roy.pdf
+cls9-10 - Math	Protik Roy	গণিত	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\_____Protik_Roy.pdf
+cls9-10 - Biology	Mihad	জীববিজ্ঞান	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\___________Mihad.pdf
+cls9-10 - ICT	Mihad	তথ্য ও যোগাযোগ প্রযুক্তি	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\_________________________Mihad.pdf
+cls9-10 - Chemistry	Mihad	রসায়ন	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\______Mihad.pdf
+cls9-10 - Physics	Mihad	পদার্থবিজ্ঞান	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\______________Mihad.pdf
+cls9-10 - BGS	Arnob	বাংলাদেশ ও বিশ্বপরিচয়t	E:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\_____________________t_Arnob.pdf
+BSC - CSE 106	Mihad	CSE 106 Online on DP - C	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\CSE_106_Online_on_DP_-_C_Mihad.pdf
+Masters	Mihad	1234	e:\inteelij\first intellij\Project JavaFx\Project JavaFx\Code\uploaded_materials\1234_Mihad.pdf

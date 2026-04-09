@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane styleClass="welcome-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.WelcomeController">
+    <AnchorPane maxWidth="880" maxHeight="580" prefWidth="860" prefHeight="560" styleClass="landing-panel">
+        <HBox alignment="CENTER_RIGHT" spacing="24" AnchorPane.topAnchor="24" AnchorPane.rightAnchor="36">
+            <Button text="Home" styleClass="top-nav-btn" onAction="#openHome"/>
+            <Button text="Courses" styleClass="top-nav-btn" onAction="#openCourses"/>
+            <Label text="About" styleClass="top-nav-item top-nav-active"/>
+            <Button text="Login" styleClass="top-nav-btn" onAction="#openLogin"/>
+        </HBox>
+        
+        <VBox alignment="TOP_CENTER" spacing="10" AnchorPane.topAnchor="65" AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="30" AnchorPane.bottomAnchor="15">
+            
+            <!-- Header -->
+            <HBox alignment="CENTER" spacing="8">
+                <Label text="🎓" style="-fx-font-size: 32px;"/>
+                <Label text="Edu-Verse" style="-fx-font-family: 'Segoe UI Black'; -fx-font-size: 32px; -fx-text-fill: #1d62da;"/>
+            </HBox>
+            <Label text="Empowering Education Through Technology" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12px; -fx-text-fill: #2d9a73;"/>
+            
+            <!-- About Card -->
+            <VBox alignment="CENTER" spacing="6" style="-fx-background-color: rgba(255,255,255,0.9); -fx-background-radius: 10; -fx-padding: 10 16;">
+                <Label text="📚 About" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 13px; -fx-text-fill: #2c467d;"/>
+                <Label text="A modern platform bridging teachers and students for seamless learning material sharing."
+                       wrapText="true" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 11px; -fx-text-fill: #5d708f; -fx-text-alignment: center;"/>
+                
+                <HBox alignment="CENTER" spacing="24">
+                    <VBox alignment="CENTER" spacing="1">
+                        <Label text="📤" style="-fx-font-size: 16px;"/>
+                        <Label text="Upload" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 9px; -fx-text-fill: #2f4a86;"/>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="1">
+                        <Label text="📥" style="-fx-font-size: 16px;"/>
+                        <Label text="Download" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 9px; -fx-text-fill: #2f4a86;"/>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="1">
+                        <Label text="🔒" style="-fx-font-size: 16px;"/>
+                        <Label text="Secure" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 9px; -fx-text-fill: #2f4a86;"/>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="1">
+                        <Label text="🎯" style="-fx-font-size: 16px;"/>
+                        <Label text="Organized" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 9px; -fx-text-fill: #2f4a86;"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+            
+            <!-- Team Section -->
+            <Label text="👨‍💻 Development Team" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 13px; -fx-text-fill: #2c467d;"/>
+            
+            <HBox alignment="CENTER" spacing="20">
+                <!-- Creator 1 -->
+                <VBox alignment="CENTER" spacing="4" prefWidth="160" minWidth="160" maxWidth="160" style="-fx-background-color: rgba(255,255,255,0.95); -fx-background-radius: 10; -fx-padding: 10 14;">
+                    <StackPane>
+                        <Circle radius="28" style="-fx-fill: linear-gradient(to bottom right, #ebf1fc, #dce8f7); -fx-stroke: #2e63d5; -fx-stroke-width: 2;"/>
+                        <ImageView fitWidth="56" fitHeight="56" preserveRatio="false">
+                            <clip><Circle radius="28" centerX="28" centerY="28"/></clip>
+                            <image><Image url="@PR.jpeg"/></image>
+                        </ImageView>
+                    </StackPane>
+                    <Label text="Protik Roy" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12px; -fx-text-fill: #2e63d5;"/>
+                    <!-- <Label text="ID: 2405163" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #5d708f;"/> -->
+                    <Label text="BUET CSE" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 9px; -fx-text-fill: #717b98;"/>
+                </VBox>
+                
+                <!-- Creator 2 -->
+                <VBox alignment="CENTER" spacing="4" prefWidth="160" minWidth="160" maxWidth="160" style="-fx-background-color: rgba(255,255,255,0.95); -fx-background-radius: 10; -fx-padding: 10 14;">
+                    <StackPane>
+                        <Circle radius="28" style="-fx-fill: linear-gradient(to bottom right, #ebf1fc, #dce8f7); -fx-stroke: #2e63d5; -fx-stroke-width: 2;"/>
+                        <ImageView fitWidth="56" fitHeight="56" preserveRatio="false">
+                            <clip><Circle radius="28" centerX="28" centerY="28"/></clip>
+                            <image><Image url="@Mihadpic.jpg.jpeg"/></image>
+                        </ImageView>
+                    </StackPane>
+                    <Label text="K.B.M. Mihad Hasan Adittya" wrapText="true" textAlignment="CENTER" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 12px; -fx-text-fill: #2e63d5;"/>
+                    <!-- <Label text="ID: 2405156" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #5d708f;"/> -->
+                    <Label text="BUET CSE" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 9px; -fx-text-fill: #717b98;"/>
+                </VBox>
+            </HBox>
+            
+            <!-- Supervisor -->
+            <VBox alignment="CENTER" spacing="3" style="-fx-background-color: linear-gradient(to right, #f0f7ff, #e8f4ff); -fx-background-radius: 8; -fx-padding: 8 20;">
+                <Label text="🎖 Supervisor" style="-fx-font-family: 'Segoe UI Semibold'; -fx-font-size: 10px; -fx-text-fill: #2c467d;"/>
+                <Label text="Arnob Saha Ankon" style="-fx-font-family: 'Segoe UI Bold'; -fx-font-size: 13px; -fx-text-fill: #1d62da;"/>
+                <Label text="Lecturer, CSE, BUET" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 10px; -fx-text-fill: #5d708f;"/>
+            </VBox>
+            
+            <!-- Footer -->
+            <Label text="© 2024 Edu-Verse | Built with ❤ at BUET" style="-fx-font-family: 'Segoe UI'; -fx-font-size: 9px; -fx-text-fill: #8d9bb8;"/>
+        </VBox>
+    </AnchorPane>
+</StackPane>

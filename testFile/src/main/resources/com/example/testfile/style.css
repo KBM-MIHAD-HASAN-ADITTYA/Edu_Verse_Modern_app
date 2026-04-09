@@ -1,0 +1,2237 @@
+.root {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+}
+
+.welcome-root {
+  -fx-background-color: #ffffff;
+}
+
+.welcome-card {
+  -fx-background-color: rgba(255, 255, 255, 0.1);
+  -fx-background-radius: 20;
+  -fx-border-color: rgba(255, 255, 255, 0.28);
+  -fx-border-radius: 20;
+  -fx-border-width: 1.2;
+}
+
+.welcome-brand {
+  -fx-font-family: "Trebuchet MS";
+  -fx-font-size: 16px;
+  -fx-text-fill: #9be7ff;
+  -fx-font-weight: bold;
+  -fx-letter-spacing: 1.5px;
+}
+
+.welcome-title {
+  -fx-font-family: "Georgia";
+  -fx-font-size: 40px;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.welcome-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 15px;
+  -fx-text-fill: #d8edf5;
+  -fx-alignment: center;
+  -fx-text-alignment: center;
+}
+
+.welcome-chip {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #e7f9ff;
+  -fx-padding: 6 12 6 12;
+  -fx-background-color: rgba(12, 40, 62, 0.75);
+  -fx-background-radius: 16;
+  -fx-border-color: rgba(155, 231, 255, 0.45);
+  -fx-border-radius: 16;
+}
+
+.welcome-cta {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #9be7ff;
+  -fx-underline: true;
+}
+
+.title {
+  /*-fx-background-color: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);*/
+  -fx-font-size: 28px;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.login-box {
+  -fx-background-color: rgba(255, 255, 255, 0.12);
+  -fx-background-radius: 14;
+  -fx-padding: 10 16 16 16;
+}
+
+.back-button {
+  -fx-background-color: rgba(82, 173, 209, 0.3);
+  -fx-text-fill: white;
+  -fx-font-size: 24px;
+  -fx-font-weight: bold;
+  -fx-padding: 0 10 2 10;
+  -fx-background-radius: 18;
+}
+
+.back-button:hover {
+  -fx-background-color: rgba(82, 173, 209, 0.6);
+}
+
+.signup-text {
+  -fx-text-fill: white;
+  -fx-font-size: 12px;
+}
+
+.signup-link {
+  -fx-text-fill: #52add1;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+  -fx-underline: true;
+}
+
+.signup-link:hover {
+  -fx-text-fill: #9be7ff;
+}
+
+.main-btn {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+  /*-fx-background-color:  #52add1;*/
+  -fx-text-fill: black;
+  -fx-font-size: 16px;
+  -fx-padding: 10 30 10 30;
+  -fx-background-radius: 25;
+}
+
+.main-btn:hover {
+  /*-fx-background-color: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);*/
+  -fx-background-color: #52add1;
+  -fx-text-fill: white;
+}
+
+.panel-box {
+  -fx-background-color: rgba(255, 255, 255, 0.12);
+  -fx-background-radius: 12;
+  -fx-padding: 14;
+}
+
+.section-title {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #d8edf5;
+}
+
+.small-text {
+  -fx-text-fill: #d8edf5;
+  -fx-font-size: 12px;
+}
+
+.landing-panel {
+  -fx-background-color: linear-gradient(to bottom right, #f9fbff, #eef4ff);
+  -fx-background-radius: 18;
+  -fx-effect: dropshadow(gaussian, rgba(61, 86, 133, 0.15), 34, 0.2, 0, 12);
+}
+
+.top-nav-item {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-font-weight: 600;
+  -fx-text-fill: #2c467d;
+}
+
+.top-nav-active {
+  -fx-border-color: transparent transparent #2f6de5 transparent;
+  -fx-border-width: 0 0 2 0;
+  -fx-padding: 0 0 4 0;
+}
+
+.top-nav-btn {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-background-color: transparent;
+  -fx-text-fill: #2c467d;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+}
+
+.top-nav-btn:hover {
+  -fx-text-fill: #1f5bd8;
+}
+
+.landing-kicker {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #2c467d;
+}
+
+.landing-title {
+  -fx-font-family: "Segoe UI Black";
+  -fx-font-size: 66px;
+  -fx-text-fill: #1d62da;
+}
+
+.landing-subtitle {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #2d9a73;
+}
+
+.landing-separator {
+  -fx-background-color: #d3deef;
+  -fx-pref-height: 1;
+}
+
+.landing-copy {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #5d708f;
+}
+
+/* Premium Let's Explore Button */
+.explore-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 15px;
+  -fx-text-fill: white;
+  -fx-background-color: linear-gradient(to right, #1e63dc, #3b82f6, #1e63dc);
+  -fx-background-radius: 25;
+  -fx-padding: 12 32 12 32;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.45), 12, 0.3, 0, 4);
+  -fx-border-color: rgba(255, 255, 255, 0.25);
+  -fx-border-radius: 25;
+  -fx-border-width: 1;
+}
+
+.explore-btn:hover {
+  -fx-background-color: linear-gradient(to right, #1555c0, #2563eb, #1555c0);
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.6), 18, 0.4, 0, 6);
+  -fx-scale-x: 1.03;
+  -fx-scale-y: 1.03;
+}
+
+.explore-btn:pressed {
+  -fx-background-color: linear-gradient(to right, #0d47a1, #1e40af, #0d47a1);
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.3), 6, 0.2, 0, 2);
+  -fx-scale-x: 0.98;
+  -fx-scale-y: 0.98;
+}
+
+/* Chat Icon Button */
+.chat-icon-btn {
+  -fx-font-size: 18px;
+  -fx-background-color: linear-gradient(to bottom, #f0f7ff, #e3effd);
+  -fx-background-radius: 20;
+  -fx-padding: 6 10 6 10;
+  -fx-cursor: hand;
+  -fx-border-color: #c5d9f2;
+  -fx-border-radius: 20;
+  -fx-border-width: 1;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.15), 4, 0.1, 0, 2);
+}
+
+.chat-icon-btn:hover {
+  -fx-background-color: linear-gradient(to bottom, #e3effd, #d1e4fa);
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.25), 6, 0.15, 0, 3);
+}
+
+.chat-badge {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 10px;
+  -fx-text-fill: white;
+  -fx-background-color: #e74c3c;
+  -fx-background-radius: 10;
+  -fx-min-width: 18;
+  -fx-min-height: 18;
+  -fx-alignment: center;
+  -fx-padding: 2 5 2 5;
+}
+
+/* Chat Popup Styles */
+.chat-list-item {
+  -fx-background-color: #f8faff;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14;
+  -fx-cursor: hand;
+  -fx-border-color: #e4ebf7;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+}
+
+.chat-list-item:hover {
+  -fx-background-color: #eef4ff;
+  -fx-border-color: #c5d9f2;
+}
+
+.chat-list-item-unread {
+  -fx-background-color: #fff8e6;
+  -fx-border-color: #ffd666;
+}
+
+.chat-message-sent {
+  -fx-background-color: linear-gradient(to right, #1e63dc, #3b82f6);
+  -fx-background-radius: 12 12 4 12;
+  -fx-padding: 8 12;
+  -fx-text-fill: white;
+}
+
+.chat-message-received {
+  -fx-background-color: #f0f4f8;
+  -fx-background-radius: 12 12 12 4;
+  -fx-padding: 8 12;
+  -fx-text-fill: #2d3748;
+  -fx-border-color: #e2e8f0;
+  -fx-border-radius: 12 12 12 4;
+  -fx-border-width: 1;
+}
+
+.chat-input-field {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 20;
+  -fx-border-color: #d1e4fa;
+  -fx-border-radius: 20;
+  -fx-border-width: 1.5;
+  -fx-padding: 8 14;
+  -fx-font-size: 13px;
+}
+
+.chat-send-btn {
+  -fx-background-color: linear-gradient(to right, #1e63dc, #3b82f6);
+  -fx-text-fill: white;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-padding: 8 16;
+  -fx-background-radius: 20;
+  -fx-cursor: hand;
+}
+
+.chat-send-btn:hover {
+  -fx-background-color: linear-gradient(to right, #1555c0, #2563eb);
+}
+
+/* Notice Board Button */
+.notice-board-btn {
+  -fx-font-size: 20px;
+  -fx-background-color: linear-gradient(to bottom right, #fff8e6, #ffeeba);
+  -fx-background-radius: 12;
+  -fx-padding: 8 12;
+  -fx-cursor: hand;
+  -fx-border-color: #ffc107;
+  -fx-border-radius: 12;
+  -fx-border-width: 2;
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.4), 8, 0.2, 0, 3);
+}
+
+.notice-board-btn:hover {
+  -fx-background-color: linear-gradient(to bottom right, #ffeeba, #ffd54f);
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.6), 12, 0.3, 0, 4);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.notice-board-btn:pressed {
+  -fx-background-color: linear-gradient(to bottom right, #ffc107, #ffb300);
+  -fx-scale-x: 0.98;
+  -fx-scale-y: 0.98;
+}
+
+/* Teacher Notice Icon */
+.notice-icon-btn {
+  -fx-font-size: 16px;
+  -fx-background-color: linear-gradient(to bottom, #fff8e6, #ffeeba);
+  -fx-background-radius: 18;
+  -fx-padding: 5 9;
+  -fx-cursor: hand;
+  -fx-border-color: #ffc107;
+  -fx-border-radius: 18;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.3), 4, 0.1, 0, 2);
+}
+
+.notice-icon-btn:hover {
+  -fx-background-color: linear-gradient(to bottom, #ffeeba, #ffd54f);
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.5), 6, 0.15, 0, 3);
+}
+
+/* Notice Card */
+.notice-card {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #fffef5);
+  -fx-background-radius: 12;
+  -fx-padding: 12 16;
+  -fx-border-color: #ffeeba;
+  -fx-border-radius: 12;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.15), 6, 0.1, 0, 2);
+}
+
+.notice-card-urgent {
+  -fx-border-color: #ff6b6b;
+  -fx-background-color: linear-gradient(to bottom, #fff5f5, #ffe8e8);
+}
+
+.illustration-pane {
+  -fx-background-color: transparent;
+}
+
+.sparkle {
+  -fx-fill: rgba(255, 250, 242, 0.9);
+}
+
+.bubble-mint {
+  -fx-fill: rgba(97, 214, 198, 0.58);
+}
+
+.bubble-sky {
+  -fx-fill: rgba(121, 198, 255, 0.43);
+}
+
+.bubble-blue {
+  -fx-fill: radial-gradient(
+    center 35% 30%,
+    radius 100%,
+    rgba(105, 190, 255, 0.86),
+    rgba(75, 139, 232, 0.66)
+  );
+}
+
+.book-shadow {
+  -fx-fill: rgba(39, 56, 91, 0.34);
+}
+
+.book-1 {
+  -fx-fill: #457bdb;
+}
+
+.book-2 {
+  -fx-fill: #2ea66f;
+}
+
+.book-3 {
+  -fx-fill: #3f6bb3;
+}
+
+.cap-base {
+  -fx-fill: #253a66;
+}
+
+.cap-top {
+  -fx-fill: #36517f;
+}
+
+.bulb-glow {
+  -fx-fill: rgba(255, 227, 119, 0.6);
+}
+
+.bulb-core {
+  -fx-fill: #ffd84a;
+}
+
+.auth-root {
+  -fx-background-color: linear-gradient(to bottom right, #dfe3ee, #e9edf7);
+}
+
+.auth-card {
+  -fx-background-color: rgba(255, 255, 255, 0.88);
+  -fx-background-radius: 16;
+  -fx-effect: dropshadow(gaussian, rgba(84, 101, 142, 0.22), 36, 0.2, 0, 14);
+}
+
+.auth-brand {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 50px;
+  -fx-text-fill: #1e63dc;
+  -fx-padding: 0 0 6 0;
+}
+
+.auth-tab-row {
+  -fx-padding: 0 0 8 0;
+}
+
+.auth-tab {
+  -fx-min-width: 170;
+  -fx-pref-width: 170;
+  -fx-min-height: 48;
+  -fx-pref-height: 48;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #6f7c9c;
+  -fx-background-color: #f2f3f8;
+  -fx-background-radius: 12;
+  -fx-border-color: #d9dfec;
+  -fx-border-radius: 12;
+  -fx-cursor: hand;
+}
+
+.auth-tab-active {
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #2369df, #1e62d9);
+  -fx-border-color: transparent;
+}
+
+.auth-field-label {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 15px;
+  -fx-text-fill: #5f6e91;
+}
+
+.auth-input-wrap {
+  -fx-background-color: #f7f8fd;
+  -fx-border-color: #cfd7ea;
+  -fx-border-width: 1.3;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 7 12 7 12;
+}
+
+.auth-input-icon {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #91a0bf;
+  -fx-min-width: 18;
+}
+
+.auth-input {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 16px;
+  -fx-text-fill: #3d4a67;
+  -fx-prompt-text-fill: #a0abc7;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-padding: 8 4 8 0;
+}
+
+.auth-check {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-text-fill: #6a7897;
+}
+
+.auth-link {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #1d63da;
+  -fx-border-color: transparent;
+  -fx-padding: 0;
+}
+
+.auth-primary-btn {
+  -fx-min-height: 56;
+  -fx-pref-height: 56;
+  -fx-background-radius: 11;
+  -fx-background-color: linear-gradient(to right, #2369df, #1f63d8);
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 20px;
+  -fx-text-fill: white;
+  -fx-cursor: hand;
+}
+
+.auth-primary-btn:hover {
+  -fx-background-color: linear-gradient(to right, #1d61d6, #1858c8);
+}
+
+.auth-footer-text {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-text-fill: #6a7897;
+}
+
+.auth-footer-link {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #1d63da;
+  -fx-border-color: transparent;
+  -fx-padding: 0;
+}
+
+.auth-back-btn {
+  -fx-min-width: 28;
+  -fx-pref-width: 28;
+  -fx-min-height: 28;
+  -fx-pref-height: 28;
+  -fx-background-color: #edf2ff;
+  -fx-background-radius: 14;
+  -fx-border-color: #c9d6f3;
+  -fx-border-radius: 14;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 15px;
+  -fx-text-fill: #2b62d6;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+}
+
+.auth-back-btn:hover {
+  -fx-background-color: #dfe9ff;
+}
+
+.role-card {
+  -fx-background-color: rgba(255, 255, 255, 0.94);
+  -fx-background-radius: 20;
+  -fx-border-color: rgba(185, 196, 226, 0.7);
+  -fx-border-width: 1.2;
+  -fx-border-radius: 16;
+}
+
+.role-brand {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 52px;
+  -fx-text-fill: #2e63d5;
+}
+
+.role-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 48px;
+  -fx-text-fill: #31406a;
+}
+
+.role-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 27px;
+  -fx-text-fill: #717b98;
+}
+
+.role-home-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #2f63d8;
+  -fx-background-color: #edf3ff;
+  -fx-background-radius: 14;
+  -fx-border-color: #cfdcf7;
+  -fx-border-radius: 14;
+  -fx-border-width: 1;
+  -fx-padding: 5 14 5 14;
+  -fx-cursor: hand;
+}
+
+.role-home-btn:hover {
+  -fx-background-color: #e3edff;
+}
+
+.role-option-card {
+  -fx-min-width: 215;
+  -fx-pref-width: 215;
+  -fx-min-height: 235;
+  -fx-pref-height: 235;
+  -fx-background-color: #f8faff;
+  -fx-background-radius: 16;
+  -fx-border-color: #d2daec;
+  -fx-border-width: 1.1;
+  -fx-border-radius: 16;
+  -fx-cursor: hand;
+}
+
+.role-option-card:hover {
+  -fx-background-color: #f2f7ff;
+}
+
+.role-option-card-selected {
+  -fx-border-color: #3e71dc;
+  -fx-border-width: 1.8;
+  -fx-effect: dropshadow(gaussian, rgba(63, 102, 194, 0.16), 16, 0.24, 0, 5);
+}
+
+.role-avatar-bg {
+  -fx-alignment: center;
+}
+
+.role-avatar-circle {
+  -fx-fill: linear-gradient(to bottom right, #ebf1fc, #dce8f7);
+}
+
+.role-avatar-label {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 18px;
+  -fx-text-fill: #4f5f86;
+}
+
+.role-option-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 17px;
+  -fx-text-fill: #2f4a86;
+}
+
+.role-check {
+  -fx-min-width: 26;
+  -fx-pref-width: 26;
+  -fx-min-height: 26;
+  -fx-pref-height: 26;
+  -fx-background-color: #35c887;
+  -fx-background-radius: 13;
+}
+
+.role-check-mark {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 15px;
+  -fx-text-fill: white;
+}
+
+.role-check-hidden {
+  -fx-opacity: 0;
+}
+
+.role-continue-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 17px;
+  -fx-text-fill: #ffffff;
+  -fx-min-height: 56;
+  -fx-pref-height: 56;
+  -fx-background-radius: 11;
+  -fx-background-color: linear-gradient(to right, #2f66e6, #2d62df);
+  -fx-border-color: transparent;
+  -fx-effect: dropshadow(gaussian, rgba(45, 88, 178, 0.25), 14, 0.16, 0, 4);
+}
+
+.role-continue-btn:hover {
+  -fx-background-color: linear-gradient(to right, #2b5fd8, #285ace);
+}
+
+/* Premium Role Page Enhancements */
+.role-continue-btn-premium {
+  -fx-background-color: linear-gradient(to right, #2563eb, #1d4ed8, #1e40af);
+  -fx-text-fill: #ffffff;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-background-radius: 12;
+  -fx-effect: dropshadow(gaussian, rgba(30, 64, 175, 0.4), 16, 0.2, 0, 5);
+}
+
+.role-continue-btn-premium:hover {
+  -fx-background-color: linear-gradient(to right, #1d4ed8, #1e40af, #1e3a8a);
+  -fx-effect: dropshadow(gaussian, rgba(30, 58, 138, 0.5), 20, 0.25, 0, 6);
+}
+
+.role-option-card {
+  -fx-min-width: 185;
+  -fx-pref-width: 185;
+  -fx-min-height: 210;
+  -fx-pref-height: 210;
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f8faff);
+  -fx-background-radius: 18;
+  -fx-border-color: #e2e8f0;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 18;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(100, 116, 139, 0.1), 10, 0.1, 0, 3);
+}
+
+.role-option-card:hover {
+  -fx-background-color: linear-gradient(to bottom, #f0f7ff, #e8f2ff);
+  -fx-border-color: #93c5fd;
+  -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.2), 16, 0.15, 0, 5);
+}
+
+.role-option-card-selected {
+  -fx-border-color: #3b82f6;
+  -fx-border-width: 2.5;
+  -fx-background-color: linear-gradient(to bottom, #eff6ff, #dbeafe);
+  -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 20, 0.2, 0, 6);
+}
+
+.role-card {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.98),
+    rgba(248, 250, 255, 0.95)
+  );
+  -fx-background-radius: 24;
+  -fx-border-color: rgba(185, 196, 226, 0.5);
+  -fx-border-width: 1;
+  -fx-border-radius: 24;
+  -fx-effect: dropshadow(gaussian, rgba(71, 85, 105, 0.15), 30, 0.15, 0, 10);
+}
+
+.role-home-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 12px;
+  -fx-text-fill: #3b82f6;
+  -fx-background-color: linear-gradient(to bottom, #eff6ff, #dbeafe);
+  -fx-background-radius: 10;
+  -fx-border-color: #bfdbfe;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+  -fx-padding: 6 14 6 14;
+  -fx-cursor: hand;
+}
+
+.role-home-btn:hover {
+  -fx-background-color: linear-gradient(to bottom, #dbeafe, #bfdbfe);
+  -fx-text-fill: #2563eb;
+}
+
+/* ========================================
+   USER HOME PANEL STYLES
+   Teacher & Student Dashboard
+   ======================================== */
+
+.user-home-card {
+  -fx-min-width: 560;
+  -fx-max-width: 620;
+  -fx-background-color: rgba(255, 255, 255, 0.96);
+  -fx-background-radius: 20;
+  -fx-effect: dropshadow(gaussian, rgba(84, 101, 142, 0.18), 40, 0.22, 0, 16);
+}
+
+.user-home-id-label {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 22px;
+  -fx-text-fill: #2e63d5;
+}
+
+.user-home-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #717b98;
+  -fx-text-alignment: center;
+}
+
+.user-home-separator {
+  -fx-background-color: linear-gradient(
+    to right,
+    transparent,
+    #d3deef,
+    transparent
+  );
+  -fx-pref-height: 1;
+  -fx-max-height: 1;
+}
+
+.user-home-panel {
+  -fx-padding: 0;
+}
+
+.user-home-section {
+  -fx-background-color: #f8faff;
+  -fx-background-radius: 14;
+  -fx-border-color: #e4ebf7;
+  -fx-border-width: 1;
+  -fx-border-radius: 14;
+  -fx-padding: 16 18 16 18;
+}
+
+.user-home-section-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 17px;
+  -fx-text-fill: #2f4a86;
+}
+
+.user-home-hint {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: #8d9bb8;
+  -fx-font-style: italic;
+}
+
+.user-home-file-label {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #5d708f;
+  -fx-padding: 6 12 6 12;
+  -fx-background-color: #eef3fc;
+  -fx-background-radius: 8;
+  -fx-border-color: #d4dff2;
+  -fx-border-radius: 8;
+}
+
+.user-home-secondary-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #2f63d8;
+  -fx-background-color: #edf3ff;
+  -fx-background-radius: 10;
+  -fx-border-color: #cfdcf7;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+  -fx-padding: 10 18 10 18;
+  -fx-cursor: hand;
+}
+
+.user-home-secondary-btn:hover {
+  -fx-background-color: #e3edff;
+  -fx-border-color: #b8caf0;
+}
+
+.user-home-action-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #35c887, #2db87a);
+  -fx-background-radius: 10;
+  -fx-padding: 12 28 12 28;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(45, 184, 122, 0.25), 10, 0.12, 0, 3);
+}
+
+.user-home-action-btn:hover {
+  -fx-background-color: linear-gradient(to right, #2db87a, #28a86e);
+}
+
+.user-home-logout-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #d64545;
+  -fx-background-color: #fff0f0;
+  -fx-background-radius: 10;
+  -fx-border-color: #f5d0d0;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+  -fx-padding: 6 14 6 14;
+  -fx-cursor: hand;
+}
+
+.user-home-logout-btn:hover {
+  -fx-background-color: #ffe5e5;
+  -fx-border-color: #f0b8b8;
+}
+
+.user-home-list {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 10;
+  -fx-border-color: #dce5f3;
+  -fx-border-width: 1;
+  -fx-border-radius: 10;
+  -fx-padding: 4;
+}
+
+.user-home-list .list-cell {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #3d4a67;
+  -fx-padding: 10 14 10 14;
+  -fx-background-color: transparent;
+  -fx-background-radius: 8;
+}
+
+.user-home-list .list-cell:filled:hover {
+  -fx-background-color: #f0f5ff;
+}
+
+.user-home-list .list-cell:filled:selected {
+  -fx-background-color: linear-gradient(to right, #e8f0ff, #dbe8ff);
+  -fx-text-fill: #2356c4;
+}
+
+.user-home-combo {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-padding: 4 0 4 0;
+}
+
+.user-home-combo .list-cell {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-text-fill: #3d4a67;
+}
+
+.user-home-tips {
+  -fx-background-color: #fffbeb;
+  -fx-background-radius: 10;
+  -fx-border-color: #f5e6b8;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+  -fx-padding: 10 16 10 16;
+}
+
+.user-home-tip-text {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 12px;
+  -fx-text-fill: #8a7a3d;
+}
+
+/* Compact styles for Teacher Panel */
+.user-home-section-compact {
+  -fx-background-color: #f8faff;
+  -fx-background-radius: 10;
+  -fx-border-color: #e4ebf7;
+  -fx-border-width: 1;
+  -fx-border-radius: 10;
+  -fx-padding: 10 12 10 12;
+}
+
+.user-home-section-title-sm {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #2f4a86;
+}
+
+.auth-field-label-sm {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #5f6e91;
+}
+
+.auth-input-wrap-sm {
+  -fx-background-color: #f7f8fd;
+  -fx-border-color: #cfd7ea;
+  -fx-border-width: 1;
+  -fx-border-radius: 6;
+  -fx-background-radius: 6;
+  -fx-padding: 4 8 4 8;
+}
+
+.auth-input-sm {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 12px;
+  -fx-text-fill: #3d4a67;
+  -fx-prompt-text-fill: #a0abc7;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-padding: 4 2 4 0;
+}
+
+.user-home-btn-sm {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #2f63d8;
+  -fx-background-color: #edf3ff;
+  -fx-background-radius: 6;
+  -fx-border-color: #cfdcf7;
+  -fx-border-radius: 6;
+  -fx-border-width: 1;
+  -fx-padding: 6 10 6 10;
+  -fx-cursor: hand;
+}
+
+.user-home-btn-sm:hover {
+  -fx-background-color: #e3edff;
+}
+
+.user-home-primary-btn-sm {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #2369df, #1f63d8);
+  -fx-background-radius: 6;
+  -fx-padding: 6 14 6 14;
+  -fx-cursor: hand;
+}
+
+.user-home-primary-btn-sm:hover {
+  -fx-background-color: linear-gradient(to right, #1d61d6, #1858c8);
+}
+
+.user-home-action-btn-sm {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #35c887, #2db87a);
+  -fx-background-radius: 6;
+  -fx-padding: 6 12 6 12;
+  -fx-cursor: hand;
+}
+
+.user-home-action-btn-sm:hover {
+  -fx-background-color: linear-gradient(to right, #2db87a, #28a86e);
+}
+
+.user-home-file-label-sm {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: #5d708f;
+  -fx-padding: 4 8 4 8;
+  -fx-background-color: #eef3fc;
+  -fx-background-radius: 5;
+  -fx-border-color: #d4dff2;
+  -fx-border-radius: 5;
+}
+
+.user-home-combo-sm {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-padding: 2 0 2 0;
+}
+
+.user-home-combo-sm .list-cell {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: #3d4a67;
+}
+
+/* ========================================
+   COURSES PAGE STYLES
+   Course Cards and Chapter Slots
+   ======================================== */
+
+.courses-page-title {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 26px;
+  -fx-text-fill: #1d62da;
+}
+
+.courses-page-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #5d708f;
+}
+
+/* Course Cards */
+.course-card {
+  -fx-min-width: 200;
+  -fx-pref-width: 220;
+  -fx-min-height: 180;
+  -fx-pref-height: 200;
+  -fx-background-color: linear-gradient(to bottom right, #ffffff, #f4f8ff);
+  -fx-background-radius: 20;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 20;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(61, 86, 133, 0.15), 16, 0.18, 0, 6);
+}
+
+.course-card:hover {
+  -fx-scale-x: 1.06;
+  -fx-scale-y: 1.06;
+  -fx-background-color: linear-gradient(to bottom right, #f0f6ff, #e4edff);
+  -fx-border-color: #a8c4f5;
+  -fx-effect: dropshadow(gaussian, rgba(45, 88, 178, 0.3), 24, 0.22, 0, 10);
+}
+
+.course-card-selected {
+  -fx-border-color: #2f66e6;
+  -fx-border-width: 2.5;
+  -fx-background-color: linear-gradient(to bottom right, #e8f0ff, #dbe8ff);
+  -fx-effect: dropshadow(gaussian, rgba(47, 102, 230, 0.35), 18, 0.25, 0, 6);
+}
+
+.course-card-special {
+  -fx-background-color: linear-gradient(to bottom right, #fff9e6, #fff3cc);
+  -fx-border-color: #e8d693;
+}
+
+.course-card-special:hover {
+  -fx-background-color: linear-gradient(to bottom right, #fff5d6, #ffecb8);
+  -fx-border-color: #d4b84a;
+}
+
+.course-card-number {
+  -fx-font-family: "Segoe UI Black";
+  -fx-font-size: 36px;
+  -fx-text-fill: #2f66e6;
+}
+
+.course-card-icon {
+  -fx-font-size: 36px;
+}
+
+.course-card-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #2f4a86;
+}
+
+.course-card-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: #717b98;
+}
+
+.course-card-count {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 10px;
+  -fx-text-fill: #ffffff;
+  -fx-padding: 3 10 3 10;
+  -fx-background-color: linear-gradient(to right, #35c887, #2db87a);
+  -fx-background-radius: 10;
+}
+
+/* Chapter Content Pane */
+.chapter-content-pane {
+  -fx-background-color: rgba(255, 255, 255, 0.92);
+  -fx-background-radius: 14;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1;
+  -fx-border-radius: 14;
+  -fx-padding: 18;
+}
+
+.chapter-pane-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 18px;
+  -fx-text-fill: #2f4a86;
+}
+
+.chapter-scroll-pane {
+  -fx-background-color: transparent;
+  -fx-background: transparent;
+  -fx-border-color: transparent;
+}
+
+.chapter-scroll-pane > .viewport {
+  -fx-background-color: transparent;
+}
+
+.chapter-slots-container {
+  -fx-padding: 8;
+}
+
+/* Chapter Slots */
+.chapter-slot {
+  -fx-background-color: linear-gradient(to bottom right, #f8faff, #eef4ff);
+  -fx-background-radius: 12;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1;
+  -fx-border-radius: 12;
+  -fx-padding: 14;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(61, 86, 133, 0.08), 8, 0.1, 0, 2);
+}
+
+.chapter-slot:hover {
+  -fx-background-color: linear-gradient(to bottom right, #e8f0ff, #dbe8ff);
+  -fx-border-color: #a8c4f5;
+  -fx-effect: dropshadow(gaussian, rgba(45, 88, 178, 0.2), 14, 0.15, 0, 5);
+}
+
+.chapter-slot-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 12px;
+  -fx-text-fill: #2f4a86;
+}
+
+.chapter-slot-status {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 10px;
+  -fx-text-fill: #35c887;
+}
+
+/* Close button for chapter pane */
+.chapter-close-btn {
+  -fx-background-color: transparent;
+  -fx-text-fill: #666666;
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-padding: 5 10 5 10;
+  -fx-cursor: hand;
+  -fx-border-color: transparent;
+  -fx-border-radius: 50%;
+  -fx-background-radius: 50%;
+}
+
+.chapter-close-btn:hover {
+  -fx-background-color: rgba(255, 0, 0, 0.1);
+  -fx-text-fill: #cc0000;
+}
+
+.chapter-close-btn:pressed {
+  -fx-background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* ========================================
+   DARK GRADIENT THEME STYLES
+   For Role Selection & User Home Panels
+   Matches Opening Window Theme
+   ======================================== */
+
+/* Dark Gradient Root - Main Background */
+.dark-gradient-root {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  );
+}
+
+/* Dark Glass Card - Glassmorphism Effect */
+.dark-glass-card {
+  -fx-background-color: rgba(255, 255, 255, 0.08);
+  -fx-background-radius: 24;
+  -fx-border-color: rgba(255, 255, 255, 0.18);
+  -fx-border-radius: 24;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 40, 0.25, 0, 15);
+}
+
+/* Dark Brand */
+.dark-brand {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 38px;
+  -fx-text-fill: #9be7ff;
+  -fx-effect: dropshadow(gaussian, rgba(155, 231, 255, 0.4), 8, 0.2, 0, 2);
+}
+
+.dark-tagline {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-text-fill: rgba(216, 237, 245, 0.8);
+  -fx-font-style: italic;
+}
+
+/* Dark Title & Subtitle */
+.dark-title {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 28px;
+  -fx-text-fill: white;
+}
+
+.dark-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 14px;
+  -fx-text-fill: rgba(216, 237, 245, 0.7);
+}
+
+/* Dark Avatar */
+.dark-avatar-bg {
+  -fx-alignment: center;
+}
+
+.dark-avatar-circle {
+  -fx-fill: linear-gradient(
+    to bottom right,
+    rgba(155, 231, 255, 0.15),
+    rgba(82, 173, 209, 0.25)
+  );
+  -fx-stroke: rgba(155, 231, 255, 0.5);
+  -fx-stroke-width: 2.5;
+  -fx-effect: dropshadow(gaussian, rgba(155, 231, 255, 0.25), 12, 0.15, 0, 4);
+}
+
+.dark-id-label {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 22px;
+  -fx-text-fill: #9be7ff;
+}
+
+/* Dark Role Card */
+.dark-role-card {
+  -fx-min-width: 185;
+  -fx-pref-width: 195;
+  -fx-min-height: 220;
+  -fx-pref-height: 230;
+  -fx-background-color: rgba(255, 255, 255, 0.06);
+  -fx-background-radius: 18;
+  -fx-border-color: rgba(155, 231, 255, 0.2);
+  -fx-border-width: 1.5;
+  -fx-border-radius: 18;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.1, 0, 4);
+}
+
+.dark-role-card:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.1);
+  -fx-border-color: rgba(155, 231, 255, 0.4);
+  -fx-effect: dropshadow(gaussian, rgba(155, 231, 255, 0.2), 16, 0.15, 0, 6);
+  -fx-scale-x: 1.03;
+  -fx-scale-y: 1.03;
+}
+
+.dark-role-card-selected {
+  -fx-border-color: #52add1;
+  -fx-border-width: 2.5;
+  -fx-background-color: rgba(82, 173, 209, 0.15);
+  -fx-effect: dropshadow(gaussian, rgba(82, 173, 209, 0.35), 20, 0.2, 0, 6);
+}
+
+.dark-role-title {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 18px;
+  -fx-text-fill: white;
+}
+
+.dark-role-desc {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: rgba(216, 237, 245, 0.6);
+}
+
+/* Dark Check Mark */
+.dark-check {
+  -fx-min-width: 24;
+  -fx-pref-width: 24;
+  -fx-min-height: 24;
+  -fx-pref-height: 24;
+  -fx-background-color: #35c887;
+  -fx-background-radius: 12;
+}
+
+.dark-check-mark {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 14px;
+  -fx-text-fill: white;
+}
+
+.dark-check-hidden {
+  -fx-opacity: 0;
+}
+
+/* Dark Separator */
+.dark-separator {
+  -fx-background-color: linear-gradient(
+    to right,
+    transparent,
+    rgba(155, 231, 255, 0.3),
+    rgba(82, 173, 209, 0.5),
+    rgba(155, 231, 255, 0.3),
+    transparent
+  );
+  -fx-pref-height: 1.5;
+  -fx-max-height: 1.5;
+}
+
+/* Dark Section Header */
+.dark-section-header {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #9be7ff;
+  -fx-padding: 6 18;
+  -fx-background-color: rgba(155, 231, 255, 0.1);
+  -fx-background-radius: 20;
+  -fx-border-color: rgba(155, 231, 255, 0.25);
+  -fx-border-radius: 20;
+}
+
+.dark-section-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 17px;
+  -fx-text-fill: #d8edf5;
+}
+
+/* Dark Section Card */
+.dark-section-card {
+  -fx-background-color: rgba(255, 255, 255, 0.05);
+  -fx-background-radius: 16;
+  -fx-border-color: rgba(155, 231, 255, 0.15);
+  -fx-border-width: 1.2;
+  -fx-border-radius: 16;
+  -fx-padding: 20 26;
+}
+
+/* Dark Navigation Button */
+.dark-nav-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: rgba(216, 237, 245, 0.9);
+  -fx-background-color: transparent;
+  -fx-padding: 8 14;
+  -fx-background-radius: 10;
+  -fx-cursor: hand;
+}
+
+.dark-nav-btn:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.12);
+  -fx-text-fill: #9be7ff;
+}
+
+/* Dark Back Button */
+.dark-back-btn {
+  -fx-min-width: 40;
+  -fx-pref-width: 40;
+  -fx-min-height: 40;
+  -fx-pref-height: 40;
+  -fx-background-color: rgba(155, 231, 255, 0.1);
+  -fx-background-radius: 20;
+  -fx-border-color: rgba(155, 231, 255, 0.3);
+  -fx-border-radius: 20;
+  -fx-border-width: 1.5;
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 20px;
+  -fx-text-fill: #9be7ff;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+}
+
+.dark-back-btn:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.2);
+  -fx-border-color: rgba(155, 231, 255, 0.5);
+  -fx-scale-x: 1.08;
+  -fx-scale-y: 1.08;
+}
+
+.dark-back-btn:pressed {
+  -fx-scale-x: 0.95;
+  -fx-scale-y: 0.95;
+}
+
+/* Dark Icon Button */
+.dark-icon-btn {
+  -fx-font-size: 18px;
+  -fx-background-color: rgba(155, 231, 255, 0.1);
+  -fx-background-radius: 20;
+  -fx-padding: 10 14;
+  -fx-cursor: hand;
+  -fx-border-color: rgba(155, 231, 255, 0.25);
+  -fx-border-radius: 20;
+  -fx-border-width: 1.5;
+}
+
+.dark-icon-btn:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.2);
+  -fx-border-color: rgba(155, 231, 255, 0.45);
+  -fx-scale-x: 1.08;
+  -fx-scale-y: 1.08;
+}
+
+/* Dark Logout Button */
+.dark-logout-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(255, 107, 107, 0.85),
+    rgba(238, 90, 90, 0.85)
+  );
+  -fx-background-radius: 12;
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+  -fx-padding: 8 18;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(238, 90, 90, 0.4), 10, 0.15, 0, 3);
+}
+
+.dark-logout-btn:hover {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(238, 90, 90, 0.95),
+    rgba(217, 68, 68, 0.95)
+  );
+  -fx-effect: dropshadow(gaussian, rgba(238, 90, 90, 0.55), 14, 0.2, 0, 4);
+  -fx-scale-x: 1.04;
+  -fx-scale-y: 1.04;
+}
+
+.dark-logout-btn:pressed {
+  -fx-scale-x: 0.96;
+  -fx-scale-y: 0.96;
+}
+
+/* Dark Action Button - Main Feature Buttons */
+.dark-action-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #1e63dc,
+    #3b82f6,
+    #52add1
+  );
+  -fx-background-radius: 14;
+  -fx-padding: 12 22;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(82, 173, 209, 0.45), 14, 0.25, 0, 5);
+  -fx-border-color: rgba(255, 255, 255, 0.15);
+  -fx-border-radius: 14;
+  -fx-border-width: 1;
+}
+
+.dark-action-btn:hover {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #1555c0,
+    #2563eb,
+    #3d9bc4
+  );
+  -fx-effect: dropshadow(gaussian, rgba(82, 173, 209, 0.6), 20, 0.35, 0, 7);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.dark-action-btn:pressed {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0d47a1,
+    #1e40af,
+    #2d8ab0
+  );
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Dark Primary Button - CTA (Green) */
+.dark-primary-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 15px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #2db87a, #35c887, #2db87a);
+  -fx-background-radius: 14;
+  -fx-padding: 12 24;
+  -fx-min-height: 50;
+  -fx-pref-height: 50;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(45, 184, 122, 0.5), 14, 0.25, 0, 5);
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-radius: 14;
+  -fx-border-width: 1;
+}
+
+.dark-primary-btn:hover {
+  -fx-background-color: linear-gradient(to right, #28a86e, #2db87a, #28a86e);
+  -fx-effect: dropshadow(gaussian, rgba(45, 184, 122, 0.65), 18, 0.35, 0, 7);
+  -fx-scale-x: 1.04;
+  -fx-scale-y: 1.04;
+}
+
+.dark-primary-btn:pressed {
+  -fx-background-color: linear-gradient(to right, #1f9060, #28a86e, #1f9060);
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Dark Secondary Button */
+.dark-secondary-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #9be7ff;
+  -fx-background-color: rgba(155, 231, 255, 0.08);
+  -fx-background-radius: 12;
+  -fx-border-color: rgba(155, 231, 255, 0.35);
+  -fx-border-radius: 12;
+  -fx-border-width: 1.5;
+  -fx-padding: 10 22;
+  -fx-cursor: hand;
+}
+
+.dark-secondary-btn:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.18);
+  -fx-border-color: rgba(155, 231, 255, 0.55);
+  -fx-text-fill: #ffffff;
+  -fx-scale-x: 1.03;
+  -fx-scale-y: 1.03;
+}
+
+.dark-secondary-btn:pressed {
+  -fx-background-color: rgba(155, 231, 255, 0.25);
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Dark Combo Box */
+.dark-combo {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-background-color: rgba(255, 255, 255, 0.08);
+  -fx-border-color: rgba(155, 231, 255, 0.25);
+  -fx-border-width: 1.5;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 8 12;
+  -fx-cursor: hand;
+}
+
+.dark-combo:hover {
+  -fx-border-color: rgba(155, 231, 255, 0.45);
+  -fx-background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-combo .list-cell {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #d8edf5;
+}
+
+/* Dark Input */
+.dark-input {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #d8edf5;
+  -fx-prompt-text-fill: rgba(216, 237, 245, 0.5);
+  -fx-background-color: rgba(255, 255, 255, 0.08);
+  -fx-border-color: rgba(155, 231, 255, 0.25);
+  -fx-border-width: 1.5;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14;
+}
+
+.dark-input:focused {
+  -fx-border-color: rgba(155, 231, 255, 0.55);
+  -fx-background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-input-wrap {
+  -fx-background-color: rgba(255, 255, 255, 0.08);
+  -fx-border-color: rgba(155, 231, 255, 0.25);
+  -fx-border-width: 1.5;
+  -fx-border-radius: 12;
+  -fx-background-radius: 12;
+  -fx-padding: 10 16;
+}
+
+/* Dark Field Label */
+.dark-field-label {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 12px;
+  -fx-text-fill: rgba(216, 237, 245, 0.7);
+}
+
+/* Dark Hint Label */
+.dark-hint-label {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: rgba(216, 237, 245, 0.5);
+  -fx-font-style: italic;
+}
+
+/* Dark Badge */
+.dark-badge {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #9be7ff;
+  -fx-background-color: rgba(155, 231, 255, 0.12);
+  -fx-padding: 5 14;
+  -fx-background-radius: 12;
+  -fx-border-color: rgba(155, 231, 255, 0.3);
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+}
+
+/* Dark Badge Alert (for notifications) */
+.dark-badge-alert {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 10px;
+  -fx-text-fill: white;
+  -fx-background-color: #e74c3c;
+  -fx-background-radius: 10;
+  -fx-min-width: 18;
+  -fx-min-height: 18;
+  -fx-alignment: center;
+  -fx-padding: 2 5;
+}
+
+/* Dark Notice Card */
+.dark-notice-card {
+  -fx-background-color: rgba(255, 248, 230, 0.08);
+  -fx-background-radius: 14;
+  -fx-padding: 18 22;
+  -fx-border-color: rgba(255, 214, 102, 0.35);
+  -fx-border-radius: 14;
+  -fx-border-width: 1.5;
+}
+
+/* Dark Tips Card */
+.dark-tips-card {
+  -fx-background-color: rgba(155, 231, 255, 0.06);
+  -fx-background-radius: 12;
+  -fx-padding: 14 22;
+  -fx-border-color: rgba(155, 231, 255, 0.2);
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+}
+
+.dark-tip-text {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: rgba(216, 237, 245, 0.75);
+}
+
+/* Dark ScrollPane styling */
+.dark-scroll {
+  -fx-background-color: transparent;
+  -fx-background: transparent;
+}
+
+.dark-scroll > .viewport {
+  -fx-background-color: transparent;
+}
+
+.dark-scroll > .scroll-bar {
+  -fx-background-color: transparent;
+}
+
+.dark-scroll > .scroll-bar > .thumb {
+  -fx-background-color: rgba(155, 231, 255, 0.3);
+  -fx-background-radius: 4;
+}
+
+.dark-scroll > .scroll-bar > .thumb:hover {
+  -fx-background-color: rgba(155, 231, 255, 0.5);
+}
+
+/* Dark Checkbox */
+.dark-checkbox {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: rgba(216, 237, 245, 0.8);
+}
+
+.dark-checkbox .box {
+  -fx-background-color: rgba(255, 255, 255, 0.08);
+  -fx-border-color: rgba(155, 231, 255, 0.4);
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+}
+
+.dark-checkbox:selected .box {
+  -fx-background-color: #52add1;
+}
+
+/* Dark Link */
+.dark-link {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: rgba(155, 231, 255, 0.7);
+  -fx-border-color: transparent;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+}
+
+.dark-link:hover {
+  -fx-text-fill: #9be7ff;
+  -fx-underline: true;
+}
+
+/* Dark Link Accent */
+.dark-link-accent {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #52add1;
+  -fx-border-color: transparent;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+}
+
+.dark-link-accent:hover {
+  -fx-text-fill: #9be7ff;
+  -fx-underline: true;
+}
+
+/* ========================================
+   PREMIUM STYLES FOR USER HOME PANEL
+   Teacher & Student Dashboard - Enhanced
+   ======================================== */
+
+/* Premium Brand */
+.premium-brand {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 34px;
+  -fx-text-fill: linear-gradient(to right, #1e63dc, #3b82f6);
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.2), 4, 0.1, 0, 2);
+}
+
+.premium-tagline {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #717b98;
+  -fx-font-style: italic;
+}
+
+/* Premium Avatar */
+.premium-avatar-bg {
+  -fx-alignment: center;
+}
+
+.premium-avatar-circle {
+  -fx-fill: linear-gradient(to bottom right, #e8f0ff, #d1e4fa);
+  -fx-stroke: linear-gradient(to bottom right, #1e63dc, #3b82f6);
+  -fx-stroke-width: 2.5;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.25), 10, 0.15, 0, 4);
+}
+
+.premium-id-label {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 20px;
+  -fx-text-fill: #1e63dc;
+}
+
+.premium-subtitle {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #717b98;
+}
+
+/* Premium Section Header */
+.premium-section-header {
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 16px;
+  -fx-text-fill: linear-gradient(to right, #1e63dc, #3b82f6);
+  -fx-padding: 4 16 4 16;
+  -fx-background-color: linear-gradient(to right, #e8f4ff, #f0f7ff);
+  -fx-background-radius: 20;
+}
+
+.premium-section-title {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 16px;
+  -fx-text-fill: #2f4a86;
+}
+
+/* Premium Separator */
+.premium-separator {
+  -fx-background-color: linear-gradient(
+    to right,
+    transparent,
+    #c5d9f2,
+    #1e63dc,
+    #c5d9f2,
+    transparent
+  );
+  -fx-pref-height: 1.5;
+  -fx-max-height: 1.5;
+}
+
+/* Premium Section Card */
+.premium-section-card {
+  -fx-background-color: linear-gradient(to bottom right, #ffffff, #f8faff);
+  -fx-background-radius: 16;
+  -fx-border-color: linear-gradient(to bottom right, #d4e0f5, #e8f0ff);
+  -fx-border-width: 1.5;
+  -fx-border-radius: 16;
+  -fx-padding: 20 24 20 24;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.08), 12, 0.1, 0, 4);
+}
+
+/* Premium Back Button */
+.premium-back-btn {
+  -fx-min-width: 36;
+  -fx-pref-width: 36;
+  -fx-min-height: 36;
+  -fx-pref-height: 36;
+  -fx-background-color: linear-gradient(to bottom right, #e8f0ff, #d1e4fa);
+  -fx-background-radius: 18;
+  -fx-border-color: #a8c4f5;
+  -fx-border-radius: 18;
+  -fx-border-width: 1.5;
+  -fx-font-family: "Segoe UI Bold";
+  -fx-font-size: 18px;
+  -fx-text-fill: #1e63dc;
+  -fx-padding: 0;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.15), 6, 0.1, 0, 2);
+}
+
+.premium-back-btn:hover {
+  -fx-background-color: linear-gradient(to bottom right, #d1e4fa, #b8d4f8);
+  -fx-border-color: #7aaaf0;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.25), 10, 0.15, 0, 4);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.premium-back-btn:pressed {
+  -fx-scale-x: 0.95;
+  -fx-scale-y: 0.95;
+}
+
+/* Premium Icon Button */
+.premium-icon-btn {
+  -fx-font-size: 18px;
+  -fx-background-color: linear-gradient(to bottom right, #e8f0ff, #d1e4fa);
+  -fx-background-radius: 20;
+  -fx-padding: 8 12;
+  -fx-cursor: hand;
+  -fx-border-color: #a8c4f5;
+  -fx-border-radius: 20;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.15), 6, 0.1, 0, 2);
+}
+
+.premium-icon-btn:hover {
+  -fx-background-color: linear-gradient(to bottom right, #d1e4fa, #b8d4f8);
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.25), 10, 0.15, 0, 4);
+  -fx-scale-x: 1.08;
+  -fx-scale-y: 1.08;
+}
+
+/* Premium Navigation Button */
+.premium-nav-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #2f4a86;
+  -fx-background-color: transparent;
+  -fx-padding: 8 14;
+  -fx-background-radius: 10;
+  -fx-cursor: hand;
+}
+
+.premium-nav-btn:hover {
+  -fx-background-color: linear-gradient(to right, #e8f0ff, #f0f7ff);
+  -fx-text-fill: #1e63dc;
+}
+
+/* Premium Logout Button */
+.premium-logout-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 13px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #ff6b6b, #ee5a5a);
+  -fx-background-radius: 12;
+  -fx-border-color: rgba(255, 255, 255, 0.3);
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+  -fx-padding: 8 16;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(238, 90, 90, 0.35), 8, 0.15, 0, 3);
+}
+
+.premium-logout-btn:hover {
+  -fx-background-color: linear-gradient(to right, #ee5a5a, #d94444);
+  -fx-effect: dropshadow(gaussian, rgba(238, 90, 90, 0.5), 12, 0.2, 0, 4);
+  -fx-scale-x: 1.03;
+  -fx-scale-y: 1.03;
+}
+
+.premium-logout-btn:pressed {
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Premium Action Button - Main Feature Buttons */
+.premium-action-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #1e63dc,
+    #3b82f6,
+    #1e63dc
+  );
+  -fx-background-radius: 14;
+  -fx-padding: 12 20;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.4), 12, 0.25, 0, 4);
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-radius: 14;
+  -fx-border-width: 1;
+}
+
+.premium-action-btn:hover {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #1555c0,
+    #2563eb,
+    #1555c0
+  );
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.55), 18, 0.35, 0, 6);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.premium-action-btn:pressed {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0d47a1,
+    #1e40af,
+    #0d47a1
+  );
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.25), 6, 0.15, 0, 2);
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Premium Primary Button - CTA */
+.premium-primary-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #ffffff;
+  -fx-background-color: linear-gradient(to right, #2db87a, #35c887, #2db87a);
+  -fx-background-radius: 12;
+  -fx-padding: 10 20;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(45, 184, 122, 0.4), 10, 0.2, 0, 3);
+  -fx-border-color: rgba(255, 255, 255, 0.25);
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+}
+
+.premium-primary-btn:hover {
+  -fx-background-color: linear-gradient(to right, #28a86e, #2db87a, #28a86e);
+  -fx-effect: dropshadow(gaussian, rgba(45, 184, 122, 0.55), 14, 0.3, 0, 5);
+  -fx-scale-x: 1.04;
+  -fx-scale-y: 1.04;
+}
+
+.premium-primary-btn:pressed {
+  -fx-background-color: linear-gradient(to right, #1f9060, #28a86e, #1f9060);
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Premium Secondary Button */
+.premium-secondary-btn {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 14px;
+  -fx-text-fill: #1e63dc;
+  -fx-background-color: linear-gradient(to bottom right, #ffffff, #f0f7ff);
+  -fx-background-radius: 12;
+  -fx-border-color: #a8c4f5;
+  -fx-border-radius: 12;
+  -fx-border-width: 1.5;
+  -fx-padding: 10 20;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.12), 8, 0.1, 0, 3);
+}
+
+.premium-secondary-btn:hover {
+  -fx-background-color: linear-gradient(to bottom right, #e8f0ff, #d1e4fa);
+  -fx-border-color: #7aaaf0;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.22), 12, 0.15, 0, 4);
+  -fx-scale-x: 1.03;
+  -fx-scale-y: 1.03;
+}
+
+.premium-secondary-btn:pressed {
+  -fx-background-color: linear-gradient(to bottom right, #d1e4fa, #b8d4f8);
+  -fx-scale-x: 0.97;
+  -fx-scale-y: 0.97;
+}
+
+/* Premium Combo Box */
+.premium-combo {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-background-color: #ffffff;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 6 10;
+  -fx-cursor: hand;
+}
+
+.premium-combo:hover {
+  -fx-border-color: #a8c4f5;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.1), 6, 0.08, 0, 2);
+}
+
+.premium-combo .list-cell {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #3d4a67;
+}
+
+/* Premium Input */
+.premium-input {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #3d4a67;
+  -fx-prompt-text-fill: #a0abc7;
+  -fx-background-color: #ffffff;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 10;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14;
+}
+
+.premium-input:focused {
+  -fx-border-color: #1e63dc;
+  -fx-effect: dropshadow(gaussian, rgba(30, 99, 220, 0.15), 8, 0.1, 0, 2);
+}
+
+.premium-input-wrap {
+  -fx-background-color: #ffffff;
+  -fx-border-color: #d4e0f5;
+  -fx-border-width: 1.5;
+  -fx-border-radius: 12;
+  -fx-background-radius: 12;
+  -fx-padding: 8 14;
+}
+
+/* Premium Field Label */
+.premium-field-label {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 12px;
+  -fx-text-fill: #5d708f;
+}
+
+/* Premium Hint Label */
+.premium-hint-label {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 11px;
+  -fx-text-fill: #8d9bb8;
+  -fx-font-style: italic;
+}
+
+/* Premium Badge */
+.premium-badge {
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-font-size: 11px;
+  -fx-text-fill: #1e63dc;
+  -fx-background-color: linear-gradient(to right, #e8f4ff, #f0f7ff);
+  -fx-padding: 5 12;
+  -fx-background-radius: 12;
+  -fx-border-color: #a8c4f5;
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+}
+
+/* Premium Notice Card */
+.premium-notice-card {
+  -fx-background-color: linear-gradient(to bottom right, #fff9e6, #fffef5);
+  -fx-background-radius: 14;
+  -fx-padding: 16 20;
+  -fx-border-color: #ffd666;
+  -fx-border-radius: 14;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(255, 193, 7, 0.15), 10, 0.1, 0, 4);
+}
+
+/* Premium Tips Card */
+.premium-tips-card {
+  -fx-background-color: linear-gradient(to right, #e8f4ff, #f0f9ff);
+  -fx-background-radius: 12;
+  -fx-padding: 14 20;
+  -fx-border-color: #a8c4f5;
+  -fx-border-radius: 12;
+  -fx-border-width: 1;
+}
+
+.premium-tip-text {
+  -fx-font-family: "Segoe UI";
+  -fx-font-size: 13px;
+  -fx-text-fill: #4a6491;
+}
+
+/* Premium ScrollPane styling */
+.premium-scroll {
+  -fx-background-color: transparent;
+  -fx-background: transparent;
+}
+
+.premium-scroll > .viewport {
+  -fx-background-color: transparent;
+}
+
+.premium-scroll > .scroll-bar {
+  -fx-background-color: transparent;
+}
+
+.premium-scroll > .scroll-bar > .thumb {
+  -fx-background-color: rgba(30, 99, 220, 0.3);
+  -fx-background-radius: 4;
+}
+
+.premium-scroll > .scroll-bar > .thumb:hover {
+  -fx-background-color: rgba(30, 99, 220, 0.5);
+}
+
+/* ScrollPane styling for user home */
+.user-home-scroll {
+  -fx-background-color: transparent;
+  -fx-background: transparent;
+}
+
+.user-home-scroll > .viewport {
+  -fx-background-color: transparent;
+}
+
+.user-home-scroll > .scroll-bar {
+  -fx-background-color: transparent;
+}
+
+.user-home-scroll > .scroll-bar > .thumb {
+  -fx-background-color: rgba(30, 99, 220, 0.3);
+  -fx-background-radius: 4;
+}
+
+.user-home-scroll > .scroll-bar > .thumb:hover {
+  -fx-background-color: rgba(30, 99, 220, 0.5);
+}

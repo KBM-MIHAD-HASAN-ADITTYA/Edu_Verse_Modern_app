@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane styleClass="welcome-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.WelcomeController">
+    <AnchorPane prefWidth="860" prefHeight="560" styleClass="landing-panel">
+        <padding>
+            <Insets top="20" right="24" bottom="20" left="24"/>
+        </padding>
+
+        <!-- Notice Board Icon (Top Left) -->
+        <Button fx:id="noticeBoardBtn" text="📢" styleClass="notice-board-btn" onAction="#openNoticeBoard"
+                AnchorPane.topAnchor="24" AnchorPane.leftAnchor="30"/>
+
+        <HBox alignment="CENTER_RIGHT" spacing="24" AnchorPane.topAnchor="24" AnchorPane.rightAnchor="36">
+            <Label text="Home" styleClass="top-nav-item top-nav-active"/>
+            <Button text="Courses" styleClass="top-nav-btn" onAction="#openCourses"/>
+            <Button text="About" styleClass="top-nav-btn" onAction="#openAbout"/>
+            <Button text="Login" styleClass="top-nav-btn" onAction="#openLogin"/>
+        </HBox>
+
+        <ImageView fitWidth="380" fitHeight="380" preserveRatio="true" smooth="true"
+                   AnchorPane.rightAnchor="30" AnchorPane.topAnchor="80">
+            <image>
+                <Image url="@cover-pic-part.png"/>
+            </image>
+        </ImageView>
+
+        <VBox alignment="TOP_LEFT" spacing="10"
+              AnchorPane.leftAnchor="60" AnchorPane.topAnchor="130">
+            <Label text="Welcome to the" styleClass="landing-kicker"/>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="🎓" style="-fx-font-size: 42px;"/>
+                <Label text="Edu-Verse" styleClass="landing-title" style="-fx-font-size: 52px;"/>
+            </HBox>
+
+            <Label text="A Reliable Platform to&#10;Share and Acquire Knowledge"
+                   styleClass="landing-subtitle"/>
+
+            <Region prefHeight="6" styleClass="landing-separator"/>
+
+            <Label text="Empowering minds through structured learning,&#10;collaboration, and innovation."
+                   styleClass="landing-copy"/>
+        </VBox>
+
+        <!-- Let's Explore Premium Button -->
+        <Button text="✨ Let's Explore" styleClass="explore-btn" 
+                onAction="#openLogin"
+                AnchorPane.bottomAnchor="40" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                maxWidth="200"/>
+
+    </AnchorPane>
+</StackPane>

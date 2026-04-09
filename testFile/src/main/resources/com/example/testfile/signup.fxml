@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="auth-root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.testfile.signupController">
+    <VBox alignment="TOP_CENTER" prefWidth="420" maxWidth="420" styleClass="auth-card" spacing="12">
+        <padding>
+            <Insets top="28" right="36" bottom="24" left="36"/>
+        </padding>
+
+        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+            <Button text="←" styleClass="auth-back-btn" onAction="#goRoleBack"/>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="8">
+            <Label text="🎓" style="-fx-font-size: 34px;"/>
+            <Label text="Edu-Verse" styleClass="auth-brand" style="-fx-font-size: 38px;"/>
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+            <Label text="👤" style="-fx-font-size: 16px;" styleClass="auth-input-icon"/>
+            <TextField fx:id="displayName" promptText="User Name" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+            <Label text="✉" style="-fx-font-size: 16px;" styleClass="auth-input-icon"/>
+            <TextField fx:id="email" promptText="Email Address" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+            <Label text="🔒" style="-fx-font-size: 14px;" styleClass="auth-input-icon"/>
+            <PasswordField fx:id="password" promptText="Password" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" styleClass="auth-input-wrap" spacing="10">
+            <Label text="🔐" style="-fx-font-size: 14px;" styleClass="auth-input-icon"/>
+            <PasswordField fx:id="confirmPassword" promptText="Confirm Password" styleClass="auth-input" HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+        <HBox alignment="CENTER_LEFT" spacing="6">
+            <CheckBox selected="true" styleClass="auth-check"/>
+            <Label text="I agree to the" styleClass="auth-footer-text"/>
+            <Hyperlink text="terms and conditions" styleClass="auth-link"/>
+        </HBox>
+
+        <Button text="Sign Up" styleClass="auth-primary-btn" maxWidth="1.7976931348623157E308" onAction="#signup"/>
+
+        <HBox alignment="CENTER" spacing="6">
+            <Label text="Already have an account?" styleClass="auth-footer-text"/>
+            <Hyperlink text="Login" styleClass="auth-footer-link" onAction="#goBack"/>
+        </HBox>
+    </VBox>
+</StackPane>
