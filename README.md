@@ -61,12 +61,14 @@ build-exe.bat
 ```
 
 Output:
-- Installer EXE (preferred): `dist\`
-- If installer build is not possible, a portable app image is created in `dist\Edu-Verse\`
+- Portable app image created in: `dist\Edu-Verse\Edu-Verse.exe`
+- Self-contained executable with bundled Java runtime
+- No Java installation required on target machine
 
 Notes:
-- Installer EXE creation may require WiX Toolset on Windows.
-- Portable app image can still be launched directly via `Edu-Verse.exe`.
+- First build takes 5-10 minutes (downloads dependencies)
+- Requires Java 21 JDK (not JRE)
+- If `dist` is not created, you likely ran only `mvnw.cmd`; run `build-exe.bat` instead
 
 ## Main Entry Point
 - `com.example.testfile.HelloApplication`
